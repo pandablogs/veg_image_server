@@ -136,7 +136,7 @@ const classifyVegetable = async (filePath) => {
         });
 
         console.log('AI Prediction:', response.data);
-        return response.data.vegetableName;
+        return response?.data?.vegetableName;
 
     } catch (error) {
         console.error('AI classification failed:', error.message);
