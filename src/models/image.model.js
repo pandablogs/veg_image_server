@@ -5,6 +5,7 @@ const ImageSchema = new mongoose.Schema({
     taste: String,
     cookingTime: String,
     imagePath: String,
+    vegetableName: String,
     uploadedAt: {
         type: Date,
         default: Date.now,
